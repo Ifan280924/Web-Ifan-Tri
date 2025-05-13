@@ -1,0 +1,360 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Animation-specific styles */
+.wow {
+    visibility: hidden;
+}
+
+/* Navigation Styles */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo img {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #8B0000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #D2042D;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('img/home.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+}
+cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero-text {
+    flex: 1;
+    color: #8B0000;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 50px 5%;
+}
+
+.about-content {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    align-items: center;
+}
+
+.profile-image {
+    flex: 1;
+}
+
+.profile-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.profile-details {
+    flex: 2;
+}
+
+.profile-details h2 {
+    color: #8B0000;
+    margin-bottom: 10px;
+}
+
+.profile-details h3 {
+    color: #D2042D;
+    margin-top: 15px;
+}
+
+.profile-details ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Product Details Section */
+.product-details {
+    background-color: #f9f5f0;
+    padding: 50px 5%;
+}
+
+.section-title {
+    text-align: center;
+    color: #8B0000;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    color: #8B0000;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffff;
+    padding: 50px 5%;
+}
+
+.contact-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.contact-form {
+    flex: 2;
+}
+
+.contact-form h2 {
+    color: #8B0000;
+    margin-bottom: 15px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: #8B0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #D2042D;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #8B0000;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-details a {
+    color: white;  /* Mengubah warna link menjadi putih */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #FFB6C1;  /* Warna merah muda saat hover */
+}
+
+.contact-info h3 {
+    color: white;  /* Mengubah warna judul menjadi putih */
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .hero-content, 
+    .about-content,
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image, 
+    .profile-image {
+        margin-top: 30px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
